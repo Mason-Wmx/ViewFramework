@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.7)
+
+project (Runner)
+
+file(GLOB SOURCES
+    "*.h"
+    "*.cpp"
+)
+
+file(GLOB_RECURSE ARITHMETICEXPRESSION
+    "ArithmeticExpression/*.cpp"
+    "ArithmeticExpression/*.h"
+)
+
+source_group("ArithmeticExpression" FILES ${ARITHMETICEXPRESSION})
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${ARITHMETICEXPRESSION})

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/NfdcModPlayground">
+        <file>images/progressNormal_ico.png</file>
+        <file>images/progressHover_ico.png</file>
+        <file>images/progressPressed_ico.png</file>  
+  </qresource>
+</RCC>

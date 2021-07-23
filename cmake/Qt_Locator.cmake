@@ -38,6 +38,7 @@ IF(QT_5xx)
 
     # use Qt_DIR approach so you can find Qt after cmake has been invoked
     IF(NOT QT_MISSING)
+        MESSAGE("Qt found: ${QT_PATH}")
         SET(Qt5_DIR "${QT_PATH}/lib/cmake/Qt5/")
         SET(Qt5Test_DIR "${QT_PATH}/lib/cmake/Qt5Test")
     ENDIF()
