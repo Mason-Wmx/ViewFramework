@@ -2,6 +2,7 @@
 
 # include scripts
 message("Processing .cmake")
+include(./cmake/sdk_versions.cmake)
 include(./cmake/Qt_Locator.cmake)
 
 # ------------------------------------------------------------------------------
@@ -11,9 +12,11 @@ project ("ViewFramework" C CXX)
 # add all _MODULES
 message("Adding modules...")
 foreach(_MODULES
+# 3p
+  ${SDK_VTK_SRC}
   # ViewFramework
   CViewFramework
-  NfdcAppCore
+  #NfdcAppCore
   NfdcModPlayground
   common
   

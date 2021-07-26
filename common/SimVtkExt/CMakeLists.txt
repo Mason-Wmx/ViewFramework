@@ -20,7 +20,6 @@ find_package(VTK COMPONENTS
   vtkGUISupportQtOpenGL
   vtkRenderingQt
 )
-include(${VTK_USE_FILE})
 
 find_package(OpenGL)
 # ------------------------------------------------------------------------------

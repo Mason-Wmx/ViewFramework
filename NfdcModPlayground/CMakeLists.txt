@@ -58,7 +58,12 @@ find_package(VTK COMPONENTS
   vtkIOGeometry
   ${VTK_OPENVR_MODULE}
 )
-include(${VTK_USE_FILE})
+
+if (NOT VTK_FOUND)
+  message("Skipping cone: ${VTK_NOT_FOUND_MESSAGE}")
+  return ()
+endif()
+message (STATUS "VTK_VERSION: ${VTK_VERSION}")
 
 # ------------------------------------------------------------------------------
 
