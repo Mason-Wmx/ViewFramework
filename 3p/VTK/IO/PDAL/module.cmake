@@ -1,0 +1,16 @@
+vtk_module(vtkIOPDAL
+  TEST_DEPENDS
+    vtkTestingCore
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  EXCLUDE_FROM_ALL
+  KIT
+    vtkIO
+  DEPENDS
+    vtkCommonCore
+    vtkFiltersGeneral
+    vtkCommonExecutionModel
+   PRIVATE_DEPENDS
+    vtkCommonDataModel
+)

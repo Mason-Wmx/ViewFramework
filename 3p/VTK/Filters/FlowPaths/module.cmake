@@ -1,0 +1,21 @@
+vtk_module(vtkFiltersFlowPaths
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkFiltersAMR
+    vtkFiltersImaging
+    vtkTestingCore
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkRenderingOpenGL2
+  DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkCommonMath
+  PRIVATE_DEPENDS
+    vtkFiltersCore
+    vtkFiltersGeometry
+    vtkFiltersSources
+    vtkIOCore
+  )

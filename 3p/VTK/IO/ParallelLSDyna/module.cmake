@@ -1,0 +1,17 @@
+vtk_module(vtkIOParallelLSDyna
+  TEST_DEPENDS
+    vtkParallelMPI
+    vtkRenderingParallel
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkRenderingOpenGL2
+  KIT
+    vtkParallel
+  DEPENDS
+    vtkIOLSDyna
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkParallelCore
+  )

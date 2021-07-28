@@ -1,0 +1,17 @@
+vtk_module(vtkInfovisBoostGraphAlgorithms
+  TEST_DEPENDS
+    vtkRenderingContextOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkIOInfovis
+    vtkViewsInfovis
+    vtkChartsCore
+    vtkViewsContext2D
+  DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+  PRIVATE_DEPENDS
+    vtkFiltersExtraction
+    vtkInfovisCore
+  )

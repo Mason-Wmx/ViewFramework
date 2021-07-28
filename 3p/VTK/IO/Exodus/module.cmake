@@ -1,0 +1,20 @@
+vtk_module(vtkIOExodus
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkRenderingOpenGL2
+  KIT
+    vtkIO
+  DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkIOCore
+    vtkIOXMLParser
+    vtkexodusII
+  PRIVATE_DEPENDS
+    vtkFiltersCore
+    vtksys
+  )

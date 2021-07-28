@@ -1,0 +1,24 @@
+vtk_module(vtkInfovisLayout
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkRenderingLabel
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkIOInfovis
+  DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+  PRIVATE_DEPENDS
+    vtkCommonComputationalGeometry
+    vtkCommonSystem
+    vtkCommonTransforms
+    vtkFiltersCore
+    vtkFiltersGeneral
+    vtkFiltersModeling
+    vtkFiltersSources
+    vtkImagingHybrid
+    vtkInfovisCore
+  )

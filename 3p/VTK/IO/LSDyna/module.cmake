@@ -1,0 +1,17 @@
+vtk_module(vtkIOLSDyna
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  KIT
+    vtkIO
+  DEPENDS
+    vtkCommonCore
+    vtkCommonExecutionModel
+    vtkIOXMLParser
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+    vtksys
+  )

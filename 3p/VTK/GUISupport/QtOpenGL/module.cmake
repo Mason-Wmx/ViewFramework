@@ -1,0 +1,13 @@
+vtk_module(vtkGUISupportQtOpenGL
+  TEST_DEPENDS
+    vtkTestingCore
+    vtkTestingRendering
+    vtkFiltersSources
+  EXCLUDE_FROM_WRAPPING
+  DEPENDS
+    vtkCommonCore
+    vtkRenderingOpenGL2
+  PRIVATE_DEPENDS
+    vtkGUISupportQt
+    vtkInteractionStyle
+  )

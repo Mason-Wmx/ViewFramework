@@ -1,0 +1,22 @@
+vtk_module(vtkIOImport
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkImagingSources
+    vtkInteractionStyle
+    vtkIOXML
+  DEPENDS
+    vtkCommonCore
+    vtkCommonExecutionModel
+    vtkCommonMisc
+    vtkRenderingCore
+    vtksys
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+    vtkCommonTransforms
+    vtkFiltersCore
+    vtkFiltersSources
+    vtkIOImage
+  )

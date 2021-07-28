@@ -1,0 +1,12 @@
+vtk_module(vtkCommonTransforms
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkTestingCore
+    vtkRenderingOpenGL2
+  KIT
+    vtkCommon
+  DEPENDS
+    vtkCommonCore
+    vtkCommonMath
+  )

@@ -1,0 +1,22 @@
+vtk_module(vtkIOParallelXdmf3
+  IMPLEMENTS
+    vtkIOXdmf3
+  DEPENDS
+    vtkParallelCore
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkIOLegacy
+    vtkIOXdmf3
+  PRIVATE_DEPENDS
+    vtksys
+    vtkxdmf3
+    vtkFiltersExtraction
+  TEST_DEPENDS
+    vtkFiltersGeneral
+    vtkTestingCore
+    vtkTestingRendering
+    vtkParallelMPI
+  KIT
+    vtkParallel
+  )

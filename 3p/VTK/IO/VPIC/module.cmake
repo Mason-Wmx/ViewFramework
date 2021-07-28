@@ -1,0 +1,16 @@
+vtk_module(vtkIOVPIC
+  TEST_DEPENDS
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  KIT
+    vtkParallel
+  DEPENDS
+    vtkCommonExecutionModel
+    vtkVPIC
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonMisc
+    vtkParallelCore
+  )

@@ -1,0 +1,20 @@
+vtk_module(vtkImagingHybrid
+  GROUPS
+    Imaging
+    StandAlone
+  TEST_DEPENDS
+    vtkTestingCore
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkImagingStencil
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  DEPENDS
+    vtkCommonCore
+    vtkCommonExecutionModel
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+    vtkIOImage
+    vtkImagingCore
+  )

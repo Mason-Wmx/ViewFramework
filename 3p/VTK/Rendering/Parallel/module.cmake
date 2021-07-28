@@ -1,0 +1,25 @@
+vtk_module(vtkRenderingParallel
+  TEST_DEPENDS
+    vtkParallelMPI
+    vtkFiltersParallelMPI
+    vtkTestingRendering
+    vtkImagingSources
+    vtkRenderingOpenGL2
+    vtkInteractionStyle
+    vtkTestingCore
+  KIT
+    vtkParallel
+  DEPENDS
+    vtkCommonCore
+    vtkRenderingOpenGL2
+    vtkRenderingCore
+  PRIVATE_DEPENDS
+    vtkglew
+    vtkCommonDataModel
+    vtkCommonMath
+    vtkCommonSystem
+    vtkFiltersParallel
+    vtkIOImage
+    vtkImagingCore
+    vtkParallelCore
+  )

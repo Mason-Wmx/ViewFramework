@@ -1,5 +1,6 @@
 /out
 /.vs
 /.git
-/3p/VTK
 /3p/QT
+/3p/VTK/.vs
+/3p/VTK/out

@@ -1,0 +1,15 @@
+vtk_module(vtkIOGDAL
+  TEST_DEPENDS
+    vtkTestingCore
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  KIT
+    vtkIO
+  DEPENDS
+    vtkCommonCore
+    vtkCommonExecutionModel
+    vtkIOImage
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+)

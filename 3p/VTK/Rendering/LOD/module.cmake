@@ -1,0 +1,20 @@
+vtk_module(vtkRenderingLOD
+  GROUPS
+    Rendering
+  TEST_DEPENDS
+    vtkTestingRendering
+    vtkRenderingOpenGL2
+    vtkInteractionStyle
+  KIT
+    vtkRendering
+  DEPENDS
+    vtkRenderingCore
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkCommonMath
+    vtkCommonSystem
+    vtkFiltersCore
+    vtkFiltersModeling
+  )

@@ -1,0 +1,14 @@
+vtk_module(vtkCommonColor
+  TEST_DEPENDS
+    vtkIOImage
+    vtkCommonExecutionModel
+    vtkRenderingOpenGL2
+    vtkTestingCore
+    vtkTestingRendering
+    vtkInteractionStyle
+  KIT
+    vtkCommon
+  DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+)

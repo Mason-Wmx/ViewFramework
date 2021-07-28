@@ -9,6 +9,9 @@ include(./cmake/Qt_Locator.cmake)
 project ("ViewFramework" C CXX)
 # ------------------------------------------------------------------------------
 
+add_definitions(-DVTK_RENDERING_OPENGL2)
+set(VTK_RENDERING_BACKEND "OpenGL2")
+
 # add all _MODULES
 message("Adding modules...")
 foreach(_MODULES
@@ -17,7 +20,7 @@ foreach(_MODULES
   # ViewFramework
   CViewFramework
   #NfdcAppCore
-  NfdcModPlayground
+  #NfdcModPlayground
   common
   
 )

@@ -1,0 +1,25 @@
+vtk_module(vtkDomainsChemistryOpenGL2
+  IMPLEMENTS
+    vtkDomainsChemistry
+  BACKEND
+    OpenGL2
+  IMPLEMENTATION_REQUIRED_BY_BACKEND
+  KIT
+    vtkOpenGL
+  TEST_DEPENDS
+    vtkIOGeometry
+    vtkTestingCore
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkRenderingOpenGL2
+  DEPENDS
+    vtkCommonCore
+    vtkDomainsChemistry
+    vtkRenderingOpenGL2
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+    vtkCommonExecutionModel
+    vtkCommonMath
+    vtkRenderingCore
+    vtkglew
+  )

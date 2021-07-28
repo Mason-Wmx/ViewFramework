@@ -1,0 +1,29 @@
+set(Module_SRCS
+  vtkCompositeDataGeometryFilter.cxx
+  vtkGeometryFilter.cxx
+  vtkHierarchicalDataSetGeometryFilter.cxx
+  vtkImageDataGeometryFilter.cxx
+  vtkImageDataToUniformGrid.cxx
+  vtkLinearToQuadraticCellsFilter.cxx
+  vtkProjectSphereFilter.cxx
+  vtkRectilinearGridGeometryFilter.cxx
+  vtkStructuredGridGeometryFilter.cxx
+  vtkStructuredPointsGeometryFilter.cxx
+  vtkUnstructuredGridGeometryFilter.cxx
+
+  vtkDataSetSurfaceFilter.cxx
+  vtkDataSetRegionSurfaceFilter.cxx
+
+  vtkAbstractGridConnectivity.cxx
+  vtkDataSetGhostGenerator.cxx
+  vtkRectilinearGridPartitioner.cxx
+  vtkStructuredAMRNeighbor.cxx
+  vtkStructuredAMRGridConnectivity.cxx
+  vtkStructuredGridConnectivity.cxx
+  vtkStructuredGridGhostDataGenerator.cxx
+  vtkStructuredGridPartitioner.cxx
+  vtkStructuredNeighbor.cxx
+  vtkUniformGridGhostDataGenerator.cxx
+  )
+
+vtk_module_library(vtkFiltersGeometry ${Module_SRCS})

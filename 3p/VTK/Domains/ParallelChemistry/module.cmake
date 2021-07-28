@@ -1,0 +1,16 @@
+vtk_module(vtkDomainsParallelChemistry
+  IMPLEMENTS
+    vtkDomainsChemistry
+  GROUPS
+    MPI
+  TEST_DEPENDS
+    vtkTestingCore
+  KIT
+    vtkParallel
+  DEPENDS
+    vtkDomainsChemistry
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkParallelMPI
+    vtkFiltersParallelMPI
+  )

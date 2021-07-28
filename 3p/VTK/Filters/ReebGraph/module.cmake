@@ -1,0 +1,14 @@
+vtk_module(vtkFiltersReebGraph
+  TEST_DEPENDS
+    vtkRenderingOpenGL2
+    vtkTestingRendering
+    vtkInteractionStyle
+  KIT
+    vtkFilters
+  DEPENDS
+    vtkCommonExecutionModel
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+    vtkFiltersCore
+  )

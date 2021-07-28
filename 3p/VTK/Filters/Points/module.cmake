@@ -1,0 +1,25 @@
+vtk_module(vtkFiltersPoints
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkTestingRendering
+    vtkInteractionStyle
+    vtkIOLegacy
+    vtkIOXML
+    vtkImagingCore
+    vtkFiltersGeneral
+    vtkViewsContext2D
+    vtkChartsCore
+    vtkRenderingOpenGL2
+    vtkRenderingVolumeOpenGL2
+    vtkRenderingContextOpenGL2
+    vtkRenderingContext2D
+  KIT
+    vtkFilters
+  DEPENDS
+    vtkCommonCore
+    vtkCommonExecutionModel
+    vtkFiltersModeling
+  PRIVATE_DEPENDS
+    vtkCommonDataModel
+  )

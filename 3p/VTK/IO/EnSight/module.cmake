@@ -1,0 +1,13 @@
+vtk_module(vtkIOEnSight
+  GROUPS
+    StandAlone
+  TEST_DEPENDS
+    vtkRenderingOpenGL2
+  KIT
+    vtkIO
+  DEPENDS
+    vtkCommonExecutionModel
+  PRIVATE_DEPENDS
+    vtkCommonCore
+    vtkCommonDataModel
+  )
